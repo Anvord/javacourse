@@ -1,3 +1,25 @@
+//odin element
+const box = document.getElementById('box');
+
+console.log(box);
+//massiv elementov, ukazat' kakoy nuzhen
+const btns = document.getElementsByTagName('button');
+
+console.log(btns[0]);
+
+//sovremenniy metod
+
+const hearts = document.querySelectorAll('.heart');  //в скобках - любой css селектор
+
+hearts.forEach(item => {
+    console.log(item);
+});
+
+const oneHeart = document.querySelector('.heart'); //возвращает первый элемент подходящий под название селектора
+console.log(oneHeart);
+
+
+
 //Динамическая типизация.  Из чего угодно в строку:
 
 console.log(typeof(String(null)));
