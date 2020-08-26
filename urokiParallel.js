@@ -1,17 +1,64 @@
-"use strict";
+//Динамическая типизация.  Из чего угодно в строку:
 
-let str = "some";
-let strObj = new String (str);
+console.log(typeof(String(null)));
+console.log(typeof(5+ ''));
+ 
+//2 вариант
 
-console.log(typeof(str));
-console.log(typeof(strObj));
+console.log(typeof(null + ''));
 
-const soldier = {
-    health: 400,
-    armor: 100
-};
+const num = 5;
+console.log("https://vk.com/catalog" + num);
+console.log(`https://vk.com/catalog${num}`);
 
-const john = Object.create(soldier);
+const fontSize = 26 + 'px';
+
+//В число:
+//1
+console.log(typeof(Number('null')));
+//2
+console.log(typeof(+'5'));
+//3
+console.log(typeof(parseInt("15px", 10)));
+
+
+let answ = +prompt("Hello?", "");
+
+//To boolean
+//to False
+//0, '', null, undefined, NaN;  = False
+
+let switcher = null;
+if (switcher) {
+    console.log('Working...');
+}
+
+switcher = 1;
+if (switcher) {
+    console.log('Working...');
+}
+
+//2
+console.log(typeof(Boolean('null')));
+
+//3
+console.log(typeof(!!('4444')));
+
+
+// "use strict";
+
+// let str = "some";
+// let strObj = new String (str);
+
+// console.log(typeof(str));
+// console.log(typeof(strObj));
+
+// const soldier = {
+//     health: 400,
+//     armor: 100
+// };
+
+// const john = Object.create(soldier);
 
 // const john = {
 //     health: 100
@@ -107,7 +154,6 @@ console.log(john.armor);
 
 // const newArray = [...array];
 
-asfasfasf
 // const q = {
 //     good: 5,
 //     norm: 3,
