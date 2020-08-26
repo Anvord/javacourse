@@ -107,7 +107,7 @@ console.log(john.armor);
 
 // const newArray = [...array];
 
-
+asfasfasf
 // const q = {
 //     good: 5,
 //     norm: 3,
